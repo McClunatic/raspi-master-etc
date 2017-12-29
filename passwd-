@@ -29,4 +29,5 @@ avahi:x:108:112:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
 lightdm:x:109:113:Light Display Manager:/var/lib/lightdm:/bin/false
 epmd:x:110:115::/var/run/epmd:/bin/false
 dnsmasq:x:111:65534:dnsmasq,,,:/var/lib/misc:/bin/false
-openldap:x:112:116::/var/lib/ldap:/bin/false
+openldap:x:112:116:OpenLDAP Server Account,,,:/var/lib/ldap:/bin/false
+nslcd:x:113:117::/var/run/nslcd/:/bin/false

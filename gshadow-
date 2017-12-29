@@ -56,3 +56,4 @@ gpio:!::pi
 lightdm:!::
 lpadmin:!::
 epmd:!::
+openldap:!::
