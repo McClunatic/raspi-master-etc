@@ -4,7 +4,7 @@ dn: cn=config
 objectClass: olcGlobal
 cn: config
 olcArgsFile: /var/run/slapd/slapd.args
-olcLogLevel: none
+olcLogLevel: stats
 olcPidFile: /var/run/slapd/slapd.pid
 olcToolThreads: 1
 structuralObjectClass: olcGlobal
@@ -13,12 +13,12 @@ creatorsName: cn=config
 createTimestamp: 20171229133808Z
 olcSaslHost: raspberrypi0.pi.local
 olcSaslRealm: PI.LOCAL
-olcAuthzRegexp: {0}"uid=([^/]*),cn=pi.local,cn=GSSAPI,cn=auth" "uid=$1,ou=Pe
+olcAuthzRegexp: {0}"uid=root.*,cn=pi.local,cn=gssapi,cn=auth" "cn=admin,
+ dc=pi,dc=local"
+olcAuthzRegexp: {1}"uid=([^/]*),cn=pi.local,cn=GSSAPI,cn=auth" "uid=$1,ou=Pe
  ople,dc=pi,dc=local"
-olcAuthzRegexp: {1}"uid=host/([^/]*).pi.local,cn=pi.local,cn=gssapi,cn=auth"
+olcAuthzRegexp: {2}"uid=host/([^/]*).pi.local,cn=pi.local,cn=gssapi,cn=auth"
   "cn=$1,ou=Hosts,dc=pi,dc=local"
-olcAuthzRegexp: {2}"uid=ldap/admin,cn=pi.local,cn=gssapi,cn=auth" "cn=admin,
- cn=config"
 entryCSN: 20171229152249.707667Z#000000#000#000000
 modifiersName: gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth
 modifyTimestamp: 20171229152249Z
