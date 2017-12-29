@@ -1,5 +1,5 @@
 # AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
-# CRC32 d7285b7d
+# CRC32 70626ff7
 dn: cn=config
 objectClass: olcGlobal
 cn: config
@@ -11,6 +11,14 @@ structuralObjectClass: olcGlobal
 entryUUID: 403298e4-80e9-1037-8bb4-c71add7133fc
 creatorsName: cn=config
 createTimestamp: 20171229133808Z
-entryCSN: 20171229133808.687783Z#000000#000#000000
-modifiersName: cn=config
-modifyTimestamp: 20171229133808Z
+olcSaslHost: raspberrypi0.pi.local
+olcSaslRealm: PI.LOCAL
+olcAuthzRegexp: {0}"uid=([^/]*),cn=pi.local,cn=GSSAPI,cn=auth" "uid=$1,ou=Pe
+ ople,dc=pi,dc=local"
+olcAuthzRegexp: {1}"uid=host/([^/]*).pi.local,cn=pi.local,cn=gssapi,cn=auth"
+  "cn=$1,ou=Hosts,dc=pi,dc=local"
+olcAuthzRegexp: {2}"uid=ldap/admin,cn=pi.local,cn=gssapi,cn=auth" "cn=admin,
+ cn=config"
+entryCSN: 20171229152249.707667Z#000000#000#000000
+modifiersName: gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth
+modifyTimestamp: 20171229152249Z
