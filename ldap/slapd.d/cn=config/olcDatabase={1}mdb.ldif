@@ -1,5 +1,5 @@
 # AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
-# CRC32 0ec814ca
+# CRC32 7486ef26
 dn: olcDatabase={1}mdb
 objectClass: olcDatabaseConfig
 objectClass: olcMdbConfig
@@ -12,7 +12,7 @@ olcAccess: {1}to attrs=shadowLastChange by self write by * read
 olcAccess: {2}to * by * read
 olcLastMod: TRUE
 olcRootDN: cn=admin,dc=pi,dc=local
-olcRootPW:: e1NTSEF9RmY0OHZLOHFSeUthVy9ERXNhbjNabDBkNmV6THhqdnY=
+olcRootPW:: e1NTSEF9aDkwL0FTNG9DNVJhL0ZIQ1Z1K2hyeEt3bXFkRnZpbFM=
 olcDbCheckpoint: 512 30
 olcDbIndex: objectClass eq
 olcDbIndex: cn,uid eq
@@ -20,9 +20,9 @@ olcDbIndex: uidNumber,gidNumber eq
 olcDbIndex: member,memberUid eq
 olcDbMaxSize: 1073741824
 structuralObjectClass: olcMdbConfig
-entryUUID: 91254202-80e8-1037-8c5e-1739eba380f3
+entryUUID: 403529ba-80e9-1037-8bbe-c71add7133fc
 creatorsName: cn=admin,cn=config
-createTimestamp: 20171229133314Z
-entryCSN: 20171229133314.999203Z#000000#000#000000
+createTimestamp: 20171229133808Z
+entryCSN: 20171229133808.704720Z#000000#000#000000
 modifiersName: cn=admin,cn=config
-modifyTimestamp: 20171229133314Z
+modifyTimestamp: 20171229133808Z
