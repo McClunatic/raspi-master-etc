@@ -129,6 +129,21 @@ image/x-portable-greymap; gpicview %s; test=test -n "$DISPLAY"
 application/pcx; gpicview %s; test=test -n "$DISPLAY"
 image/svg+xml; gpicview %s; test=test -n "$DISPLAY"
 image/svg-xml; gpicview %s; test=test -n "$DISPLAY"
+text/english; gvim -f %s; test=test -n "$DISPLAY"
+text/plain; gvim -f %s; test=test -n "$DISPLAY"
+text/x-makefile; gvim -f %s; test=test -n "$DISPLAY"
+text/x-c++hdr; gvim -f %s; test=test -n "$DISPLAY"
+text/x-c++src; gvim -f %s; test=test -n "$DISPLAY"
+text/x-chdr; gvim -f %s; test=test -n "$DISPLAY"
+text/x-csrc; gvim -f %s; test=test -n "$DISPLAY"
+text/x-java; gvim -f %s; test=test -n "$DISPLAY"
+text/x-moc; gvim -f %s; test=test -n "$DISPLAY"
+text/x-pascal; gvim -f %s; test=test -n "$DISPLAY"
+text/x-tcl; gvim -f %s; test=test -n "$DISPLAY"
+text/x-tex; gvim -f %s; test=test -n "$DISPLAY"
+application/x-shellscript; gvim -f %s; test=test -n "$DISPLAY"
+text/x-c; gvim -f %s; test=test -n "$DISPLAY"
+text/x-c++; gvim -f %s; test=test -n "$DISPLAY"
 text/x-python; /usr/bin/idle3 %s; test=test -n "$DISPLAY"
 text/plain; leafpad %s; test=test -n "$DISPLAY"
 application/vnd.openofficeorg.extension; libreoffice --math %s; test=test -n "$DISPLAY"
@@ -180,6 +195,7 @@ application/vnd.wolfram.nb; mathematica %s; test=test -n "$DISPLAY"
 application/vnd.wolfram.player; mathematica %s; test=test -n "$DISPLAY"
 application/vnd.wolfram.wl; mathematica %s; test=test -n "$DISPLAY"
 text/plain; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+text/plain; gview -f %s; edit=gvim -f %s; compose=gvim -f %s; test=test "$DISPLAY" != ""
 text/csv; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="CSV Document"; nametemplate=%s.csv
 text/spreadsheet; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Spreadsheet Interchange Document"; nametemplate=%s.slk
 application/x-quattropro; soffice --nologo --calc '%s'; edit=soffice --nologo --calc '%s'; test=test -n "$DISPLAY"; description="Quattro Pro 6 for Windows Spreadsheet"; nametemplate=%s.wb2
@@ -214,6 +230,7 @@ application/x-troff-man; /usr/bin/man -Tascii -l '%s' | col -b; copiousoutput; d
 text/troff; /usr/bin/man -Tascii -l '%s' | col -b; copiousoutput; description=Man page
 text/*; less '%s'; needsterminal
 text/*; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+text/*; gview -f %s; edit=gvim -f %s; compose=gvim -f %s; test=test "$DISPLAY" != ""
 application/x-info; /usr/bin/info --subnodes -o /dev/stdout -f '%s' 2>/dev/null; copiousoutput; description=GNU Info document
 application/x-tar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput
 application/x-gtar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput

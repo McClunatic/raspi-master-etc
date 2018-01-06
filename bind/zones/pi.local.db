@@ -14,10 +14,10 @@ $TTL	604800
 	IN	NS	raspberrypi0.pi.local.
 
 ; name servers - A records
-raspberrypi0.pi.local	IN	A	192.168.1.100.
+raspberrypi0.pi.local.	IN	A	192.168.1.100
 
 ; 192.168.1.0/24 - A records
-fedorabox.pi.local	IN	A	192.168.1.4.
-raspberrypi1.pi.local	IN	A	192.168.1.101.
-raspberrypi2.pi.local	IN	A	192.168.1.102.
-raspberrypi3.pi.local	IN	A	192.168.1.103.
+fedorabox.pi.local.	IN	A	192.168.1.4
+raspberrypi1.pi.local.	IN	A	192.168.1.101
+raspberrypi2.pi.local.	IN	A	192.168.1.102
+raspberrypi3.pi.local.	IN	A	192.168.1.103
