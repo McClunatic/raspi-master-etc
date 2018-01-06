@@ -13,5 +13,5 @@ zone "pi.local" {
 
 zone "1.168.192.in-addr.arpa" {
 	type master;
-	file "/etc/bind/zones/192.168.1.db;  # zone file for 192.168.1.0/24 subnet
+	file "/etc/bind/zones/192.168.1.db";  # zone file for 192.168.1.0/24 subnet
 };
