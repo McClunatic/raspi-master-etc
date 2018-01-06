@@ -59,3 +59,4 @@ epmd:x:115:
 openldap:x:116:
 nslcd:x:117:
 bind:x:118:
+sssd:x:119:

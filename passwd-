@@ -32,3 +32,4 @@ dnsmasq:x:111:65534:dnsmasq,,,:/var/lib/misc:/bin/false
 openldap:x:112:116:OpenLDAP Server Account,,,:/var/lib/ldap:/bin/false
 nslcd:x:113:117:nslcd name service LDAP connection daemon,,,:/var/run/nslcd/:/bin/false
 bind:x:114:118::/var/cache/bind:/bin/false
+sssd:x:115:119::/var/lib/sss:/bin/false
