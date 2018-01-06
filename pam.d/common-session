@@ -21,6 +21,7 @@ session	requisite			pam_deny.so
 # since the modules above will each just jump around
 session	required			pam_permit.so
 # and here are more per-package modules (the "Additional" block)
+session	optional			pam_krb5.so minimum_uid=1000
 session	required	pam_unix.so 
 session	optional			pam_sss.so 
 session	optional			pam_ldap.so 
