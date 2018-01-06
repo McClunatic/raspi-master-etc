@@ -57,3 +57,4 @@ lightdm:x:113:
 lpadmin:x:114:
 epmd:x:115:
 openldap:x:116:
+nslcd:x:117:
